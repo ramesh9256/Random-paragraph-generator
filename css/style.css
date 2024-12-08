@@ -1,0 +1,98 @@
+/* General styling for the body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Styling for the header */
+h1 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Styling for the input field */
+input[type="number"] {
+    padding: 12px;
+    margin: 10px;
+    width: 70%;
+    max-width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the container where the random paragraph will be displayed */
+.container {
+    background-color: #fff;
+    padding: 15px;
+    width: 70%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for the paragraph that will be displayed inside the container */
+.container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    border: 1px solid skyblue;
+        text-align: justify;
+        padding: 5px;
+}
+
+/* Responsive Design for smaller screens (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    input[type="number"], button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container p {
+        font-size: 0.95rem;
+        border: 1px solid skyblue;
+        text-align: justify;
+        padding: 5px;
+    }
+}
